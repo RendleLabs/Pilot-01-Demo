@@ -1,0 +1,39 @@
+﻿@model SystemInfoViewModel
+@{
+    ViewData["Title"] = "Info";
+}
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Property</th>
+        <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>OS Version</td>
+        <td>@Model.OSVersion</td>
+    </tr>
+    <tr>
+        <td>Runtime</td>
+        <td>@Model.RuntimeType</td>
+    </tr>
+    <tr>
+        <td>CLR Version</td>
+        <td>@Model.ClrVersion</td>
+    </tr>
+    <tr>
+        <td>Machine Name</td>
+        <td>@Model.MachineName</td>
+    </tr>
+    <tr>
+        <td>Processors</td>
+        <td>@Model.ProcessorCount</td>
+    </tr>
+    <tr>
+        <td>Environment</td>
+        <td>@Model.EnvironmentName</td>
+    </tr>
+    </tbody>
+</table>
